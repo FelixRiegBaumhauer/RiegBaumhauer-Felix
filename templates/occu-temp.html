@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+
+<html>
+  
+  
+  <head>
+    <title>{{foo}}</title>
+  </head>
+  <body>
+    <br>
+    {{name}}
+    <br>
+    
+    Your job: {{ans}}
+    <br>
+    
+    <table border="1">
+      {%- for key in coll %}
+      <tr>
+ 	<td>{{key}}</td>
+	<td>{{coll[key]}}</td>
+      </tr>
+    {%- endfor %}
+  </body>
+  
+</html>
