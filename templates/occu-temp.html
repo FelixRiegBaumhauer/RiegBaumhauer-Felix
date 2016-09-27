@@ -3,7 +3,7 @@
 <html>
   
   <head>
-    <title>{{name}}</title>
+    <title>{{title}}</title>
   </head>
   <body>
     <br>
@@ -12,10 +12,10 @@
     <br>
     
     <table border="1">
-      {%- for key in coll %}
+      {%- for key in dict %}
       <tr>
  	<td>{{key}}</td>
-	<td>{{coll[key]}}</td>
+	<td>{{dict[key]}}</td>
       </tr>
     {%- endfor %}
   </body>
